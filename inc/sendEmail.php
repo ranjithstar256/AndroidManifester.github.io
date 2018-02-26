@@ -102,7 +102,7 @@ if($_POST) {
 
 		if ($mail) { echo "OK"; }
 
-      else { echo "Something went wrong. Please try again."; }
+      else { echo "Something went wrong. Please Mail to ranjithpsundar@gmail.com or reach me at 8148580586 "; }
 
 		
 
