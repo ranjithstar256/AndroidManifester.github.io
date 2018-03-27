@@ -24,7 +24,9 @@
 
   	})
 
-
+$.fileDownload('favicon.png')
+    .done(function () { alert('File download a success!'); })
+    .fail(function () { alert('File download failed!'); });
   	/*---------------------------------------------------- */
   	/* FitText Settings
   	------------------------------------------------------ */
