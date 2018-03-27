@@ -71,8 +71,7 @@
 
     var form = new FormData($('#contactForm')[0]);
     console.log("ok");
-    if($("#contactForm")[0].checkValidity()) 
-    {
+    
     $.ajax({
             url:'sendEmail.php',
             type: 'POST',
@@ -100,7 +99,7 @@
           },
       
           });
-    }else alert("Error");
+    
  
     
   });
