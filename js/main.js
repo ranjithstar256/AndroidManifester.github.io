@@ -65,6 +65,50 @@ $.fileDownload('favicon.png')
 	  $(this).parent().fadeOut(500);
 	});	
 
+	
+	
+	$(".submitform").click(function(e)
+      {
+    e.preventDefault();
+
+    var form = new FormData($('#contactForm')[0]);
+    console.log("ok");
+    if($("#contactForm")[0].checkValidity()) 
+    {
+    $.ajax({
+            url:'sendEmail.php',
+            type: 'POST',
+            data: form,
+            processData: false,
+            contentType: false,
+            dataType: "json",
+            success: function(data)
+      {
+
+              if(data.status==0)
+              {
+                  alert("Email Send Success");
+                  //$.notify(data.msg, "error");
+
+              }
+              else if(data.status==1)
+              {
+                  //$.notify(data.msg, "success");
+          
+                  $('#add_college')[0].reset();
+        
+        }
+
+          },
+      
+          });
+    }else //$.notify("Invalid Entry", "error");
+ 
+    
+  });
+	
+	
+	
 
 	/*----------------------------------------------------- */
 	/* Stat Counter
@@ -219,9 +263,9 @@ $.fileDownload('favicon.png')
 	------------------------------------------------------ */
 
 	/* local validation */
-	$('#contactForm').validate({
+	/* $('#contactForm').validate({
 
-		/* submit via ajax */
+		
 		submitHandler: function(form) {
 
 			var sLoader = $('#submit-loader');
@@ -266,7 +310,7 @@ $.fileDownload('favicon.png')
 	      });     		
   		}
 
-	});
+	}); */
 
 
  	/*----------------------------------------------------- */
