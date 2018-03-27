@@ -100,7 +100,7 @@
           },
       
           });
-    }else //$.notify("Invalid Entry", "error");
+    }else alert("Error");
  
     
   });
