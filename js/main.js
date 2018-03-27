@@ -135,7 +135,7 @@
     
     $.ajax({
             url:'sendEmail.php',
-            type: 'POST',
+            type: 'PUT',
             data: form,
             processData: false,
             contentType: false,
