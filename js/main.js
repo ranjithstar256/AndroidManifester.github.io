@@ -229,7 +229,7 @@
 		      type: "POST",
 			dataType: 'jsonp',
 
-		      url: "inc/sendEmail.php",
+		      url: "/inc/sendEmail.php",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
