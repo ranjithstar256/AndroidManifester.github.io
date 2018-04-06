@@ -233,7 +233,7 @@
 	------------------------------------------------------ */
 
 	/* local validation */
-	/* $('#contactForm').validate({
+	$('#contactForm').validate({
 
 		
 		submitHandler: function(form) {
@@ -272,7 +272,7 @@
 		      error: function() {
 
 		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
+		      	$('#message-warning').html("Something went wrong. Please mail to ranjithpsundar@gmail.com or call to +91-8148580586.");
 		         $('#message-warning').fadeIn();
 
 		      }
@@ -280,7 +280,7 @@
 	      });     		
   		}
 
-	}); */
+	}); 
 
 
  	/*----------------------------------------------------- */
