@@ -178,6 +178,9 @@
 .fa-heart:before {
   content: "\f004";
 }
+.fa-google-photos {
+  content: "\f302";
+}
 .fa-star:before {
   content: "\f005";
 }
