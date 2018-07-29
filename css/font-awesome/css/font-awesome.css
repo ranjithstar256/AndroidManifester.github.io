@@ -613,6 +613,10 @@
 .fa-twitter:before {
   content: "\f099";
 }
+
+.fa-images:before {
+  content: "\f302";
+}
 .fa-facebook:before {
   content: "\f09a";
 }
